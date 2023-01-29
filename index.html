@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="score-dis">
+            <div class="game-name">
+                <div>ROCK</div>
+                <div>Paper</div>
+                <div>scissors</div>
+            </div>
+            <div class="score-board">
+                <div>Score</div>
+                <div class="score">
+                    0
+                </div>
+            </div>
+
+        </div>
+        <div class="selection-dis">
+            <div class="top1">
+                <div class="white purple">
+                    <!-- <div class="white"> -->
+                        <img src="img/sc.png" alt="">
+                    <!-- </div> -->
+            
+                </div>
+                <div class="stick">
+            
+                </div>
+                <div class="white yellow">
+                    <img src="img/paper.png" alt="">
+                </div>
+            
+            </div>
+            <div class="top2">
+                <!-- <div class="stick" style="transform: rotate(60deg);"> -->
+                    <div class="stick">
+            
+                </div>
+                <div class="white pink">
+                    <img src="img/rc.png" alt="">
+                </div>
+                <div class="stick" style="transform: rotate(120deg);">
+            
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <button class="refresh hide">Try again</button>
+            
+            <!-- Trigger/Open The Modal -->
+            <button id="rules">Rules</button>
+            
+            <!-- The Modal -->
+            <div id="Modal" class="modal hide">
+            
+                <!-- Modal content -->
+                <div class="modal-cont">
+                    <span class="close">X</span>
+                    <H1>Game Rules</H1>
+                    <p>
+                    <ul>
+                        <li>
+                            Rock beats scissors, scissors beat paper, and paper beats rock.
+                        </li>
+                        <li>
+                            Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                            scissors.”
+                        </li>
+                        <li>
+                            Use rock, paper, scissors to settle minor decisions or simply play to pass the time
+                        </li>
+                        <li>
+                            If both players lay down the same hand, each player lays down another hand
+                        </li>
+                    </ul>
+            
+                    </p>
+                </div>
+            
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
