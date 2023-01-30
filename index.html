@@ -17,24 +17,26 @@
             </div>
             <div class="score-board">
                 <div>Score</div>
-                <div class="score">
+                <div class="score" id="score">
                     0
                 </div>
             </div>
 
         </div>
-        <div class="selection-dis">
+        <div class="selection-dis ">
             <div class="top1">
-                <div class="white purple">
-                    <!-- <div class="white"> -->
-                        <img src="img/sc.png" alt="">
-                    <!-- </div> -->
+                <!-- scissors -->
+                <div class="white" id="scissors">
+                    
+                    <img src="img/sc.png" alt="">
+
             
                 </div>
                 <div class="stick">
             
                 </div>
-                <div class="white yellow">
+                <!-- paper -->
+                <div class="white" id="paper">
                     <img src="img/paper.png" alt="">
                 </div>
             
@@ -44,7 +46,8 @@
                     <div class="stick">
             
                 </div>
-                <div class="white pink">
+                <!-- rock -->
+                <div class="white" id="rock">
                     <img src="img/rc.png" alt="">
                 </div>
                 <div class="stick" style="transform: rotate(120deg);">
@@ -52,6 +55,24 @@
                 </div>
             </div>
 
+        </div>
+        <div class="result-dis">
+            <div class="player-choice">
+                <p>Your Choice</p>
+                <div id="player-choice"></div>
+
+            </div>
+            <div class="result">
+                <p class="win-dis">YOU WIN <br>AGAINST PC</p>
+                <button id="tryagain-btn">PLAY AGAIN</button>
+
+            </div>
+            <div class="pc-choice">
+                <p>PC Choice</p>
+                <div id="pc-choice">
+                
+                </div>
+            </div>
         </div>
         <div>
             <button class="refresh hide">Try again</button>
