@@ -3,13 +3,21 @@ var modal=document.getElementById("Modal");
 var cls=document.getElementsByClassName("close")[0];
 var playerscore=0;
 var selectionScreen=document.getElementsByClassName("selection-dis")[0];
+var resultScreen=document.getElementsByClassName("result-dis")[0];
 var playAgn=document.getElementById("tryagain-btn");
 var playerCh=document.getElementById("player-choice");
 var pcCh=document.getElementById("pc-choice");
+var Refreshbtn=document.getElementsByClassName("refresh")[0];
+
+var html$='';
+var html_='';
 
 playAgn.onclick=function(){
-
+    resultScreen.classList.add("hide");
     selectionScreen.classList.remove("hide");
+    Refreshbtn.classList.add("show");
+    playerCh.innerHTML='';
+    pcCh.innerHTML='';
 
 };
 
@@ -23,16 +31,34 @@ cls.onclick=function(){
     modal.classList.remove("show");
 }
 
+Refreshbtn.onclick=function(){
+    playerscore=0;
+    pscore.textContent=playerscore;
+
+}
+
 
 options.forEach(option=>{
     option.addEventListener("click",function(){
+        var html$='';
+        var html_='';
+        resultScreen.classList.remove("hide");
+        Refreshbtn.classList.remove("show");
+
+
         selectionScreen.classList.add("hide");
         const compNo=Math.floor(Math.random()*3);
         const compChoice=compOptions[compNo];
         console.log(this);
-        compareHand(this.getAttribute("id"),compChoice); 
-        
+        var player=this.getAttribute("id");
+        compareHand(player,compChoice); 
 
+        html$+='<div class="white" id='+this.getAttribute("id")+'>'+'<img src="img/'+player+'.png">'+'<div class="info">'+'</div>';
+
+        html_+='<div class="white" id='+compChoice+'>'+'<img src="img/'+compChoice+'.png">'+'<div class="info">'+'</div>';
+
+        playerCh.innerHTML=html$;
+        pcCh.innerHTML=html_;
 
     });
 });
@@ -78,6 +104,7 @@ const compareHand=(playerChoice,compChoice)=>{
 
 
 }
+
 var pscore=document.getElementById("score");
 const updatescore=()=>{
     console.log(pscore);

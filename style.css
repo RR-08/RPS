@@ -82,11 +82,12 @@ section{
     content:"\25AA";
     color:yellow;
 }
-div.hide{
+.hide{
     opacity:0;
     pointer-events:none;
 }
-div.show{
+
+.show{
     opacity:1;
     pointer-events:all;
 
@@ -160,7 +161,6 @@ button{
     text-align:center;
 }
 .refresh {
-    margin-top:200px;
     border:none;
     background:none;
     color:white;
@@ -190,4 +190,7 @@ button{
     border-radius:4px;
     font-size:24px;
 
+}
+.win-outline{
+    outline:#4CAF50 solid 10px;
 }
