@@ -71,8 +71,8 @@ const compareHand=(playerChoice,compChoice)=>{
     console.log(playerChoice,compChoice);
     if(playerChoice==compChoice){
         winner.textContent="TIE";
-        lost[0].classList.remove("won");
-        lost[1].classList.remove("won");
+//         lost[0].classList.remove("won");
+//         lost[1].classList.remove("won");
         return;
     }
     if(playerChoice==="rock"){
