@@ -64,15 +64,15 @@ options.forEach(option=>{
 
 
 const compareHand=(playerChoice,compChoice)=>{
-    var lost=document.getElementsByClassName("won");
+    var lost=document.querySelectorAll(".won");
     console.log(lost[0]);
 
     const winner=document.querySelector(".win-dis");
     console.log(playerChoice,compChoice);
     if(playerChoice==compChoice){
         winner.textContent="TIE";
-//         lost[0].classList.remove("won");
-//         lost[1].classList.remove("won");
+        lost[0].classList.remove("won");
+        lost[1].classList.remove("won");
         return;
     }
     if(playerChoice==="rock"){
