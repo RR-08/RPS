@@ -9,6 +9,7 @@
 </head>
 <body>
     <section>
+        <div class="top-bar">
         <div class="score-dis">
             <div class="game-name">
                 <div>ROCK</div>
@@ -16,14 +17,14 @@
                 <div>scissors</div>
             </div>
             <div class="score-board">
-                <div>Score</div>
+                <div>Your Score</div>
                 <div class="score" id="score">
                     0
                 </div>
             </div>
 
-        </div>
-        <div class="selection-dis ">
+        </div></div>
+        <div class="selection-dis hide ">
             <div class="top1">
                 <!-- scissors -->
                 <div class="white" id="scissors">
@@ -50,33 +51,38 @@
                 <div class="white" id="rock">
                     <img src="img/rock.png" alt="">
                 </div>
-                <div class="stick" style="transform: rotate(120deg);">
+                <div class="stick" style="transform: rotate(120deg)">
             
                 </div>
             </div>
 
 
         </div>
-        <button class="refresh hide">Try again</button>
 
-        <div class="result-dis hide">
+        <div class="refresh-btn-cont">
+            <button class="refresh hide">Try again</button>
+        </div>
+        
+
+        <div class="result-dis">
             <div class="player-choice">
-                <p>Your Choice</p>
+                <p>You Picked</p>
                 <div id="player-choice">
                     
                 </div>
 
             </div>
             <div class="result">
-                <p class="win-dis">YOU WIN <br>AGAINST PC</p>
+                <p class="win-dis"></p>
                 <button id="tryagain-btn">PLAY AGAIN</button>
 
             </div>
             <div class="pc-choice">
-                <p>PC Choice</p>
+                <p>PC Picked</p>
                 <div id="pc-choice">
-                
+                    
                 </div>
+        
             </div>
         </div>
         <div>
